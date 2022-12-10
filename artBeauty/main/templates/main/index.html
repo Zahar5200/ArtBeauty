@@ -1,0 +1,218 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<html lang="ru">
+{% block title %}{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    
+
+    <title>Art-Beauty</title>
+</head>
+{% block content %}
+<body>
+
+    <div class="main">
+        <div class="main__wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" alt="Логотип">
+                        </div>
+                        <a class="service primary-btn" href="{% url 'service' %}">Наш сервис</a>
+                        <form class="search">
+                            <input class="search__input" placeholder="">
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <div class="container container-main">
+                <div class="sidebars">
+                    <div class="sidebar-first">
+                        <div class="sidebar-first__inner">
+                            <div class="user">
+                                <h2 class="user__greetings">Привет, user</h2>
+                                <div class="user__img">
+                                    <img src="{% static 'assets/images/user-img.jpg' %}" alt="Пользователь">
+                                </div>
+                                <ul class="user__list">
+                                    <a class="user-link" href="{% url 'registration' %}" target="_blank">
+                                        <img src="{% static 'assets/images/icons/entry-icon.png' %}" alt="Войти">
+                                    </a>
+                                    <li class="user__item">
+                                        <a class="user__link"
+                                        target="_blank"
+                                        href="#">Новости</a>
+                                    </li>
+                                    <li class="user__item">
+                                        <a class="user__link"
+                                        target="_blank"
+                                        href="{% url 'community' %}">Сообщества</a>
+                                    </li>
+                                    <li class="user__item">
+                                        <a class="user__link"
+                                        target="_blank"
+                                        href="{% url 'service' %}">Сообщения</a>
+                                    </li>
+                                    <li class="user__item">
+                                        <a class="user__link"
+                                        target="_blank"
+                                        href="{% url 'sliderService' %}">В тренде</a>
+                                    </li>
+                                    <li class="user__item">
+                                        <a class="user__link"
+                                        target="_blank"
+                                        href="#">Статистика</a>
+                                    </li>
+                                    <li class="user__item">
+                                        <a class="user__link"
+                                        target="_blank"
+                                        href="#">Видеосвязь</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-main master">
+                        <div class="master__wrapper">
+                            <h2 class="master__title">Мастера</h2>
+                            <ul class="master__list">
+                                <li class="master__item">
+                                    <a class="master__link" href="#">
+                                        <div class="master__link-img">
+                                            <img src="{% static 'assets/images/master-link-1.jpg' %}" alt="Анна">
+                                        </div>
+                                        <div class="master__link-title">
+                                            Анна
+                                            <span class="master__link-subtitle">
+                                                Визажист
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="master__item">
+                                    <a class="master__link" href="#">
+                                        <div class="master__link-img">
+                                            <img src="{% static 'assets/images/master-link-2.jpg' %}" alt="Елена">
+                                        </div>
+                                        <div class="master__link-title">
+                                            Елена
+                                            <span class="master__link-subtitle">
+                                                Мастер ногтевого сервиса
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="master__item">
+                                    <a class="master__link" href="#">
+                                        <div class="master__link-img">
+                                            <img src="{% static 'assets/images/master-link-3.jpg' %}" alt="Ирина">
+                                        </div>
+                                        <div class="master__link-title">
+                                            Ирина
+                                            <span class="master__link-subtitle">
+                                                Бровист
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="master__item">
+                                    <a class="master__link" href="#">
+                                        <div class="master__link-img">
+                                            <img src="{% static 'assets/images/master-link-4.jpg' %}" alt="София">
+                                        </div>
+                                        <div class="master__link-title">
+                                            София
+                                            <span class="master__link-subtitle">
+                                                Стилист
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-second news">
+                        <h2 class="news__title">Новости</h2>
+                        <ul class="news__list">
+                            <li class="news__item">
+                                <div class="news__data">12.10.22</div>
+                                <div class="news__img">
+                                    <img src="{% static 'assets/images/news-el.jpg' %}" alt="Новость 1"></img>
+                                </div>
+                                <div class="news__info">
+                                    Данный мастер показал себя с очень хорошей стороны.
+                                    Работа была сделана качество...
+                                </div>
+                                <a class="news__link" href="#">Читать далее</a>
+                            </li>
+                            <li class="news__item">
+                                <div class="news__data">12.10.22</div>
+                                <div class="news__img">
+                                    <img src="{% static 'assets/images/news-el.jpg' %}" alt="Новость 1"></img>
+                                </div>
+                                <div class="news__info">
+                                    Данный мастер показал себя с очень хорошей стороны.
+                                    Работа была сделана качество...
+                                </div>
+                                <a class="news__link" href="#">Читать далее</a>
+                            </li>
+                            <li class="news__item">
+                                <div class="news__data">12.10.22</div>
+                                <div class="news__img">
+                                    <img src="{% static 'assets/images/news-el.jpg' %}" alt="Новость 1"></img>
+                                </div>
+                                <div class="news__info">
+                                    Данный мастер показал себя с очень хорошей стороны.
+                                    Работа была сделана качество...
+                                </div>
+                                <a class="news__link" href="#">Читать далее</a>
+                            </li>
+                        </ul>
+                        <button class="news__btn primary-btn">Все новости</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="horizontal">
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="logo">
+                    <img src="{% static 'assets/images/logo.png' %}" alt="Логотип">
+                </div>
+                <ul class="user__list">
+                    <li class="user__item">
+                        <a class="user__link" href="#">Новости</a>
+                    </li>
+                    <li class="user__item">
+                        <a class="user__link" href="{% url 'community' %}" target="_blank">Сообщества</a>
+                    </li>
+                    <li class="user__item">
+                        <a class="user__link" href="{% url 'service' %}" target="_blank">Сообщения</a>
+                    </li>
+                    <li class="user__item">
+                        <a class="user__link" href="{% url 'sliderService' %}" target="_blank">В тренде</a>
+                    </li>
+                    <li class="user__item">
+                        <a class="user__link" href="#" target="_blank">Статистика</a>
+                    </li>
+                    <li class="user__item">
+                        <a class="user__link" href="#" target="_blank">Видеосвязь</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+{% endblock %}
+</html>

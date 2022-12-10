@@ -1,0 +1,60 @@
+{% load static %}
+
+<html lang="en">
+
+{% block title %} {% endblock %}
+<head>
+    <meta charset="UTF-8">
+    
+   <link rel="stylesheet" href="{% static 'assets/source/bootstrap-v4/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/source/fancybox/fancybox.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/source/swiper/dist/css/swiper.min.css' %}">
+
+    
+</head>
+ <body>
+
+ </body>
+        
+<!--site block-->
+          <script src="{% static 'assets/source/jquery.slim.min.js' %}"></script>
+    <script src="{% static 'assets/source/bootstrap-v4/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.min.js' %}"></script>
+    <script src="{% static 'assets/source/fancybox/fancybox.umd.js' %}"></script>
+    <script src="{% static 'assets/js/community.js' %}"></script>
+    <script src="{% static 'assets/source/swiper/dist/js/swiper.min.js' %}"></script>
+    <script src="{% static 'assets/js/swiperBundle.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/sliderService.js' %}"></script>
+    <!--<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if ("IntersectionObserver" in window) {
+                var iframesLazy = document.querySelectorAll("iframe.iframe-youtube-lazy-video");
+                var iframeObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting && entry.target.src.length == 0) {
+                            entry.target.src = entry.target.dataset.src;
+                            iframeObserver.unobserve(entry.target);
+                        }
+                    });
+                });
+                iframesLazy.forEach(function (iframe) {
+                    iframeObserver.observe(iframe);
+                });
+            } else {
+                var iframesLazy = document.querySelector('iframe.iframe-youtube-lazy-video');
+                for (var i = 0; i < iframesLazy.length; i++) {
+                    if (lazyVids[i].getAttribute('data-src')) {
+                        lazyVids[i].setAttribute('src', lazyVids[i].getAttribute('data-src'));
+                    }
+                }
+            }
+        });
+    </script>-->
+
+{% block content %} {% endblock %}
+
+
+
+

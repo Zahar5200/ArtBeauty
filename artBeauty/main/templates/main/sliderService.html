@@ -1,0 +1,120 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}<title>SliderService</title>{% endblock %}
+</head>
+{% block content %}
+<body>
+
+    <div class="primary-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <img src="{% static 'assets/images/logo.png' %}" alt="Логотип">
+                    </div>
+                    <a class="service primary-btn" href="#">Наш сервис</a>
+                    <form class="search">
+                        <input class="search__input" placeholder="">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="custom-slide swiper-slide">
+                        <div class="custom-slide__content">
+                            <img src="{% static 'assets/images/slider-service-1.png' %}" alt="Маникюр">
+                            <div class="custom-slide__info">Маникюр</div>
+                        </div>
+                    </div>
+                    <div class="custom-slide swiper-slide">
+                        <div class="custom-slide__content">
+                            <img src="{% static 'assets/images/slider-service-2.png' %}" alt="Тюннинг">
+                            <div class="custom-slide__info">Тюннинг</div>
+                        </div>
+                    </div>
+                    <div class="custom-slide swiper-slide">
+                        <div class="custom-slide__content">
+                            <img src="{% static 'assets/images/slider-service-5.png' %}" alt="Искусство">
+                            <div class="custom-slide__info">Искусство</div>
+                        </div>
+                    </div>
+                    <div class="custom-slide swiper-slide">
+                        <div class="custom-slide__content">
+                            <img src="{% static 'assets/images/slider-service-4.png' %}" alt="Педикюр">
+                            <div class="custom-slide__info">Педикюр</div>
+                        </div>
+                    </div>
+                    <div class="custom-slide swiper-slide">
+                        <div class="custom-slide__content">
+                            <img src="{% static 'assets/images/slider-service-3.png' %}" alt="Макияж">
+                            <div class="custom-slide__info">Педикюр</div>
+                        </div>
+                    </div>
+                    <div class="custom-slide swiper-slide">
+                        <div class="custom-slide__content">
+                            <img src="{% static 'assets/images/slider-service-1.png' %}" alt="Маникюр">
+                            <div class="custom-slide__info">Маникюр</div>
+                        </div>
+                    </div>
+                    <div class="custom-slide swiper-slide">
+                        <div class="custom-slide__content">
+                            <img src="{% static 'assets/images/slider-service-1.png' %}" alt="Маникюр">
+                            <div class="custom-slide__info">Маникюр</div>
+                        </div>
+                    </div>
+                    <div class="custom-slide swiper-slide">
+                        <div class="custom-slide__content">
+                            <img src="{% static 'assets/images/slider-service-1.png' %}" alt="Маникюр">
+                            <div class="custom-slide__info">Маникюр</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="logo">
+                        <img src="{% static 'assets/images/logo.png' %}" alt="Логотип">
+                    </div>
+                    <ul class="user__list">
+                        <li class="user__item">
+                            <a class="user__link" href="{% url 'index' %}">Новости</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="{% url 'community' %}">Сообщества</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="{% url 'service' %}">Сообщения</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="{% url 'sliderService' %}">В тренде</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">Статистика</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">Видеосвязь</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+{% endblock %}
+</html>

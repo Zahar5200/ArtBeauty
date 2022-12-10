@@ -1,0 +1,100 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<html lang="ru">
+{% block title %}{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <title>Registration</title>
+</head>
+{% block content %}
+<body>
+
+    <div class="primary-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <img src="{% static 'assets/images/logo.png' %}" alt="Логотип">
+                    </div>
+                    <a class="service primary-btn" href="#">Наш сервис</a>
+                    <form class="search">
+                        <input class="search__input" placeholder="">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="registr">
+            <div class="container">
+                <div class="registr__inner">
+                    <h2 class="registr__title">регистрация</h2>
+                    <form class="registr__form" method="get" action="">
+                        <div class="registr__wrapper">
+                            <input class="registr__input" type="text" placeholder="Фамилия">
+                            <input class="registr__input" type="text" placeholder="Имя">
+                            <input class="registr__input" type="text" placeholder="Отчество">
+                            <input class="registr__input" type="text" placeholder="Ник">
+                            <input class="registr__input" type="text" placeholder="Почта">
+                            <input class="registr__input" type="text" placeholder="Город">
+                            <label class="checkbox-wrapper">
+                                <input class="checkbox-wrapper__input registr__checkbox" type="checkbox" placeholder="">
+                                <div class="my-checkbox">
+                                    <div class="checkmark"></div>
+                                </div>
+                                <div class="checkbox-wrapper__text">Представитель сферы услуг</div>
+                            </label>
+                            <input class="registr__input" type="text"
+                                placeholder="Наименование организации/самозанятый">
+                            <div class="registr-inner">
+                                <select class="registr__select">
+                                    <option celected value="Сфера оказания услуг">Сфера оказания услуг</option>
+                                    <option class="registr__option">Наука</option>
+                                    <option class="registr__option">Бизнес</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="primary-btn registr__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="logo">
+                        <img src="{% static 'assets/images/logo.png' %}" alt="Логотип">
+                    </div>
+                    <ul class="user__list">
+                        <li class="user__item">
+                            <a class="user__link" href="#">Новости</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">Сообщества</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">Сообщения</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">В тренде</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">Статистика</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">Видеосвязь</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+{% endblock %}
+</html>

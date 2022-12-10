@@ -1,0 +1,543 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    {% block title %}<title>Service</title>{% endblock %}
+</head>
+{% block content %}
+<body>
+
+    <div class="primary-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <img src="{% static 'assets/images/logo.png' %}" alt="Логотип">
+                    </div>
+                    <a class="service primary-btn" href="#">Наш сервис</a>
+                    <form class="search">
+                        <input class="search__input" placeholder="">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="community">
+            <div class="container">
+                <div class="community__inner">
+                    <div class="community__item community-user">
+                        <div class="community__about">
+                            <button class="marker-btn" id="btn">
+                                <img src="{% static 'assets/images/icons/marker-icon.png' %}" alt="Редактировать">
+                            </button>
+                            <div class="community__about-primary">
+                                <h2 class="user__greetings">Привет, user</h2>
+                                <div class="user__img">
+                                    <img src="{% static 'assets/images/user-img.jpg' %}" alt="Пользователь">
+                                </div>
+                            </div>
+                            <div class="community__about-secondary">
+                                <h2 class="community__about-title">
+                                    Обо мне
+                                </h2>
+                                <textarea id="field" placeholder="Sed bibendum ac nibh nec feugiat. Duis ut felis tellus. Ut vul Sed bibendum ac nibh
+                                nec feugiat. Duis ut felis tellus. Ut vul Sed bibendum ac nibh nec feugiat. Duis ufelis
+                                tellus. Ut vul" class="community__about-text"></textarea>
+                            </div>
+                        </div>
+                        <div class="community__content">
+                            <h2 class="community__content-title">Сохраненный контент</h2>
+                            <ul class="community__content-list">
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-1.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-2.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-3.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-4.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-1.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-2.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-3.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-1.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-2.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-3.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-4.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                                <li class="community__content-item">
+                                    <a data-fancybox class="community__content-link" href="https://youtu.be/h3fUgOKFMNU">
+                                        <img src="{% static 'assets/images/about-link-1.jpg' %}" alt="01.32м">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="user__list">
+                            <a class="user-link" href="registration.html" target="_blank">
+                                <img src="{% static 'assets/images/icons/entry-icon.png' %}" alt="Войти">
+                            </a>
+                            <li class="user__item">
+                                <a class="user__link" href="{% url 'index' %}">Новости</a>
+                            </li>
+                            <li class="user__item">
+                                <a class="user__link" href="{% url 'community' %}">Сообщества</a>
+                            </li>
+                            <li class="user__item">
+                                <a class="user__link" href="{% url 'service' %}">Сообщения</a>
+                            </li>
+                            <li class="user__item">
+                                <a class="user__link" href="{% url 'sliderService' %}">В тренде</a>
+                            </li>
+                            <li class="user__item">
+                                <a class="user__link" href="#">Статистика</a>
+                            </li>
+                            <li class="user__item">
+                                <a class="user__link" href="#">Видеосвязь</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="community__item community-service">
+                        <div class="service">
+                            <h2 class="service__title">сервис</h2>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <img src="{% static 'assets/images/service-img-1.jpg' %}" alt="Маникюр">
+                                    <h3 class="service__item-title">Маникюр</h3>
+                                </li>
+                                <li class="service__item">
+                                    <img src="{% static 'assets/images/service-img-2.jpg' %}" alt="Педикюр">
+                                    <h3 class="service__item-title">Педикюр</h3>
+                                </li>
+                                <li class="service__item">
+                                    <img src="{% static 'assets/images/service-img-3.jpg' %}" alt="Макияж">
+                                    <h3 class="service__item-title">Макияж</h3>
+                                </li>
+                                <li class="service__item">
+                                    <img src="{% static 'assets/images/service-img-4.jpg' %}" alt="Тюнинг">
+                                    <h3 class="service__item-title">Тюнинг</h3>
+                                </li>
+                                <li class="service__item">
+                                    <img src="{% static 'assets/images/service-img-5.jpg' %}" alt="Искусство">
+                                    <h3 class="service__item-title">Искусство</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="community__item community-chat">
+                        <div class="chat">
+                            <h2 class="chat__title">чат</h2>
+                            <div class="chat__wrapper ">
+                                <div class="chat__inner " id="0">
+                                    <h3 class="chat__el-title">чат</h3>
+                                    <div class="chat__el">
+                                        <div class="chat__el-inner">
+                                            <button class="prev-btn chat__el-btn">
+                                                <img src="{% static 'assets/images/icons/prev-icon.png' %}" alt="Назад">
+                                            </button>
+                                            <div class="chat__el-content">
+                                                <div class="professional">
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/chat-img-1.jpg' %}" alt="Елена">
+                                                    </div>
+                                                    <div class="professional__chat">
+                                                        <p class="professional__message">
+                                                            Привет! Все в силе? Время актуально?
+                                                            <span class="time">5 мин назад</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="user">
+                                                    <div class="user__chat">
+                                                        <p class="user__message">
+                                                            <span class="time">5 мин назад</span>
+                                                            Привет! Да!
+                                                            Но могу опоздать на 15 минут
+                                                        </p>
+                                                    </div>
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/user-img.jpg' %}" alt="Пользователь">
+                                                    </div>
+                                                </div>
+                                                <div class="user">
+                                                    <div class="user__chat">
+                                                        <p class="user__message">
+                                                            <span class="time">5 мин назад</span>
+                                                            Привет! Да!
+                                                            Но могу опоздать на 15 минут
+                                                        </p>
+                                                    </div>
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/user-img.jpg' %}" alt="Пользователь">
+                                                    </div>
+                                                </div>
+                                                <div class="professional">
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/chat-img-1.jpg' %}" alt="Елена">
+                                                    </div>
+                                                    <div class="professional__chat">
+                                                        <p class="professional__message">
+                                                            Привет! Все в силе? Время актуально?
+                                                            <span class="time">5 мин назад</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <form
+                                                action=""
+                                                class="chat__el-form">
+                                                    <textarea
+                                                    type="text"
+                                                    class="chat__el-textarea"></textarea>
+                                                    <button
+                                                    type="submit"
+                                                    class="chat__el-send">
+                                                        <img src="{% static 'assets/images/icons/chat-send-icon.png' %}" alt="Отправить">
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat__inner " id="1">
+                                    <h3 class="chat__el-title">чат</h3>
+                                    <div class="chat__el">
+                                        <div class="chat__el-inner">
+                                            <button class="prev-btn chat__el-btn">
+                                                <img src="{% static 'assets/images/icons/prev-icon.png' %}" alt="Назад">
+                                            </button>
+                                            <div class="chat__el-content">
+                                                <div class="professional">
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/chat-img-2.jpg' %}" alt="Елена">
+                                                    </div>
+                                                    <div class="professional__chat">
+                                                        <p class="professional__message">
+                                                            Привет! Все в силе? Время актуально?
+                                                            <span class="time">5 мин назад</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="user">
+                                                    <div class="user__chat">
+                                                        <p class="user__message">
+                                                            <span class="time">5 мин назад</span>
+                                                            Привет! Да!
+                                                            Но могу опоздать на 15 минут
+                                                        </p>
+                                                    </div>
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/user-img.jpg' %}" alt="Пользователь">
+                                                    </div>
+                                                </div>
+                                                <form
+                                                action=""
+                                                class="chat__el-form">
+                                                    <textarea
+                                                    type="text"
+                                                    class="chat__el-textarea"></textarea>
+                                                    <button
+                                                    type="submit"
+                                                    class="chat__el-send">
+                                                        <img src="{% static 'assets/images/icons/chat-send-icon.png' %}" alt="Отправить">
+                                                    </button>
+                                                </form> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat__inner " id="2">
+                                    <h3 class="chat__el-title">чат</h3>
+                                    <div class="chat__el">
+                                        <div class="chat__el-inner">
+                                            <button class="prev-btn chat__el-btn">
+                                                <img src="{% static 'assets/images/icons/prev-icon.png' %}" alt="Назад">
+                                            </button>
+                                            <div class="chat__el-content">
+                                                <div class="professional">
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/chat-img-3.jpg' %}" alt="Елена">
+                                                    </div>
+                                                    <div class="professional__chat">
+                                                        <p class="professional__message">
+                                                            Привет! Все в силе? Время актуально?
+                                                            <span class="time">5 мин назад</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="user">
+                                                    <div class="user__chat">
+                                                        <p class="user__message">
+                                                            <span class="time">5 мин назад</span>
+                                                            Привет! Да!
+                                                            Но могу опоздать на 15 минут
+                                                        </p>
+                                                    </div>
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/user-img.jpg' %}" alt="Пользователь">
+                                                    </div>
+                                                </div>
+                                                <form
+                                                action=""
+                                                class="chat__el-form">
+                                                    <textarea
+                                                    type="text"
+                                                    class="chat__el-textarea"></textarea>
+                                                    <button
+                                                    type="submit"
+                                                    class="chat__el-send">
+                                                        <img src="{% static 'assets/images/icons/chat-send-icon.png' %}" alt="Отправить">
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat__inner " id="3">
+                                    <h3 class="chat__el-title">чат</h3>
+                                    <div class="chat__el">
+                                        <div class="chat__el-inner">
+                                            <button class="prev-btn chat__el-btn">
+                                                <img src="{% static 'assets/images/icons/prev-icon.png' %}" alt="Назад">
+                                            </button>
+                                            <div class="chat__el-content">
+                                                <div class="professional">
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/chat-img-2.jpg' %}" alt="Елена">
+                                                    </div>
+                                                    <div class="professional__chat">
+                                                        <p class="professional__message">
+                                                            Привет! Все в силе? Время актуально?
+                                                            <span class="time">5 мин назад</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="user">
+                                                    <div class="user__chat">
+                                                        <p class="user__message">
+                                                            <span class="time">5 мин назад</span>
+                                                            Привет! Да!
+                                                            Но могу опоздать на 15 минут
+                                                        </p>
+                                                    </div>
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/user-img.jpg' %}" alt="Пользователь">
+                                                    </div>
+                                                </div>
+                                                <form
+                                                action=""
+                                                class="chat__el-form">
+                                                    <textarea
+                                                    type="text"
+                                                    class="chat__el-textarea"></textarea>
+                                                    <button
+                                                    type="submit"
+                                                    class="chat__el-send">
+                                                        <img src="{% static 'assets/images/icons/chat-send-icon.png' %}" alt="Отправить">
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat__inner " id="4">
+                                    <h3 class="chat__el-title">чат</h3>
+                                    <div class="chat__el">
+                                        <div class="chat__el-inner">
+                                            <button class="prev-btn chat__el-btn">
+                                                <img src="{% static 'assets/images/icons/prev-icon.png' %}" alt="Назад">
+                                            </button>
+                                            <div class="chat__el-content">
+                                                <div class="professional">
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/chat-img-3.jpg' %}" alt="Елена">
+                                                    </div>
+                                                    <div class="professional__chat">
+                                                        <p class="professional__message">
+                                                            Привет! Все в силе? Время актуально?
+                                                            <span class="time">5 мин назад</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="user">
+                                                    <div class="user__chat">
+                                                        <p class="user__message">
+                                                            <span class="time">5 мин назад</span>
+                                                            Привет! Да!
+                                                            Но могу опоздать на 15 минут
+                                                        </p>
+                                                    </div>
+                                                    <div class="professional__img">
+                                                        <img src="{% static 'assets/images/user-img.jpg' %}" alt="Пользователь">
+                                                    </div>
+                                                </div>
+                                                <form
+                                                action=""
+                                                class="chat__el-form">
+                                                    <textarea
+                                                    type="text"
+                                                    class="chat__el-textarea"></textarea>
+                                                    <button
+                                                    type="submit"
+                                                    class="chat__el-send">
+                                                        <img src="{% static 'assets/images/icons/chat-send-icon.png' %}" alt="Отправить">
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="chat__list">
+                                    <li class="chat__item">
+                                        <a class="chat__link" href="#" id="0">
+                                            <div class="chat__link-img">
+                                                <img src="{% static 'assets/images/chat-img-1.jpg' %}" alt="Анна визажист">
+                                            </div>
+                                            <div class="chat__link-info">
+                                                <h3 class="chat__link-title">
+                                                    Анна
+                                                    <span class="chat__link-subtitle">Визажист</span>
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="chat__item">
+                                        <a class="chat__link" href="#" id="1">
+                                            <div class="chat__link-img">
+                                                <img src="{% static 'assets/images/chat-img-2.jpg' %}"
+                                                    alt="Елена Мастер ногтевого сервиса">
+                                            </div>
+                                            <div class="chat__link-info">
+                                                <h3 class="chat__link-title">
+                                                    Елена
+                                                    <span class="chat__link-subtitle">Мастер ногтевого сервиса</span>
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="chat__item">
+                                        <a class="chat__link" href="#" id="2">
+                                            <div class="chat__link-img">
+                                                <img src="{% static 'assets/images/chat-img-3.jpg' %}" alt="Ирина Бровист">
+                                            </div>
+                                            <div class="chat__link-info">
+                                                <h3 class="chat__link-title">
+                                                    Ирина
+                                                    <span class="chat__link-subtitle">Бровист</span>
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="chat__item">
+                                        <a class="chat__link" href="#" id="3">
+                                            <div class="chat__link-img">
+                                                <img src="{% static 'assets/images/chat-img-2.jpg' %}" alt="Ирина Бровист">
+                                            </div>
+                                            <div class="chat__link-info">
+                                                <h3 class="chat__link-title">
+                                                    Ирина
+                                                    <span class="chat__link-subtitle">Бровист</span>
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="chat__item">
+                                        <a class="chat__link" href="#" id="4">
+                                            <div class="chat__link-img">
+                                                <img src="{% static 'assets/images/chat-img-3.jpg' %}" alt="Елена Бровист">
+                                            </div>
+                                            <div class="chat__link-info">
+                                                <h3 class="chat__link-title">
+                                                    Елена
+                                                    <span class="chat__link-subtitle">Бровист</span>
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="logo">
+                        <img src="{% static 'assets/images/logo.png' %}" alt="Логотип">
+                    </div>
+                    <ul class="user__list">
+                        <li class="user__item">
+                            <a class="user__link" href="{% url 'index' %}">Новости</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="{% url 'community' %}">Сообщества</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="{% url 'service' %}">Сообщения</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="{% url 'sliderService' %}">В тренде</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">Статистика</a>
+                        </li>
+                        <li class="user__item">
+                            <a class="user__link" href="#">Видеосвязь</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+{% endblock %}
+</html>
